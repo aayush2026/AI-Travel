@@ -111,10 +111,13 @@ const CreateTrip = () => {
 
     setLoading(true);
 
+    // Find the budget object to get the range
+    const selectedBudget = selectBudgetList.find(b => b.title === formData.budget);
+    
     const FINAL_PROMPT = USER_PROMPT
       .replace(/{location}/g, formData.location.formatted_address)
       .replace(/{noOfDays}/g, formData.noOfDays)
-      .replace(/{budget}/g, formData.budget)
+      .replace(/{budget}/g, selectedBudget ? selectedBudget.budgetRange : formData.budget)
       .replace(/{traveller}/g, formData.traveller);
 
     try {

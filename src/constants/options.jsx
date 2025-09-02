@@ -35,21 +35,21 @@ export const selectBudgetList = [
     title: "Budget",
     desc: "Great experiences without breaking the bank",
     icon: "💸",
-    budgetRange: "Under $500"
+    budgetRange: "Under ₹40,000"
   },
   {
     id: 2,
     title: "Mid-Range",
     desc: "Comfort and value, perfectly balanced",
-    icon: "💰",
-    budgetRange: "$500 - $1500"
+    icon: "��",
+    budgetRange: "₹40,000 - ₹1,25,000"
   },
   {
     id: 3,
     title: "Luxury",
     desc: "Indulgent escapes with premium experiences",
     icon: "💎",
-    budgetRange: "$1500+"
+    budgetRange: "₹1,25,000+"
   }
 ];
 
@@ -59,13 +59,13 @@ export const USER_PROMPT = `Generate a {noOfDays} day travel plan for the follow
 - **Location**: {location}
 - **Number of Days**: {noOfDays}
 - **Traveler Type**: {traveller}
-- **Budget**: {budget}
+- **Budget**: {budget} (in Indian Rupees - ₹)
 
 ### Part 1: Hotel Options
 Provide a list of 3 hotel options. For each hotel, include:
 - Hotel name
 - Hotel address
-- Price per night
+- Price per night (in Indian Rupees - ₹)
 - Hotel image URL
 - Geo coordinates (latitude and longitude)
 - Star rating
