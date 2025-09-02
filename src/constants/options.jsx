@@ -41,7 +41,7 @@ export const selectBudgetList = [
     id: 2,
     title: "Mid-Range",
     desc: "Comfort and value, perfectly balanced",
-    icon: "��",
+    icon: "💰",
     budgetRange: "₹40,000 - ₹1,25,000"
   },
   {
